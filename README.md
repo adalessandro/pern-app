@@ -17,4 +17,4 @@ and create the database matching the values defined in `backend/.env`.
 
 ### Run backend/frontend
 
-Follow instructions detailed in each `README.md~ files.
+Follow instructions detailed in each `README.md` file.
