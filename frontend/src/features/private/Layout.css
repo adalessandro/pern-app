@@ -1,0 +1,47 @@
+/* TODO change to module */
+
+#private-layout {
+  min-height: 100vh;
+  width: 100%;
+}
+/*
+#components-layout-demo-top-side-2 .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+*/
+.site-layout-background {
+  background: #fff;
+}
+
+.user-dropdown {
+  width: 400px;
+}
+
+.header .app-name {
+  font-size: large;
+  color: white;
+}
+
+.header.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#private-layout-content {
+  margin-top: 64px;
+}
+
+#left-menu > .ant-layout-sider-children {
+  position: fixed;
+  width: 200px;
+}
