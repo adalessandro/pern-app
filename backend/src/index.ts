@@ -48,7 +48,7 @@ app.use('/api/user', userRoutes)
 app.get('/api', async (req: Request, res: Response) => {
 
     try {
-        const test = { ariel: `Hello Word! ${(new Date).toTimeString()}` }
+        const test = { msg: `Hello Word! ${(new Date).toTimeString()}` }
         res.status(200).json(test);
     } catch (error) {
         console.error(error)
@@ -62,14 +62,14 @@ let server: Server;
 const start = async (): Promise<void> => {
     try {
         /*
-        esto te va a crear la bbdd la primera vez- chupapito
+        esto te va a crear la bbdd la primera vez
         */
 
         await connection.sync({
             force: process.env.NODE_ENV !== 'production'
         } as SyncOptions);
 
-        insertUser('ariel', 'chupapito', 'ariel@chupapito.com', 'Ariel Chupapito');
+        insertUser('admin', 'admin', 'admin@admin.com', 'Admin');
 
         server = app.listen(PORT, () => {
             console.log(`Server started on port ${PORT}`);
